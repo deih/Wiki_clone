@@ -1,1 +1,6 @@
 1. Init commit
+2. Gems:
+	* haml
+	* bootstrap
+	* devise
+	* simple_form
