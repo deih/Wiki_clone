@@ -4,3 +4,14 @@
 	* bootstrap
 	* devise
 	* simple_form
+Add ability to add Articles:
+	3. model Article title content:text
+	4. controller Articles
+		* #index
+		* add routes and root path
+		* add CRUD actions + art_params
+	5. Add index.html.haml
+	6. Add _form.html.haml and form :)
+	7. new.html.haml
+	8. rails g install:simple_form --bootstrap
+	8. show.html.haml + find_article + before_action + #show
