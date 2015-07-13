@@ -15,3 +15,29 @@ Add ability to add Articles:
 	7. new.html.haml
 	8. rails g install:simple_form --bootstrap
 	8. show.html.haml + find_article + before_action + #show
+9. Configure devise:
+	* rails g d:inst and so on
+	* model User
+10. Add assoc between Article and User
+	* assoc
+	* migration add_user_id_to_art (user_id:integer:index)
+11. New article from current user:
+	* change #new #create to current_user.articles.build
+	* authenticate user
+	* edit index.html for add new article for signed users
+12. Add categories to articles:
+	* model Category name:string
+	* add category_id to articles
+	* add associations
+	* add categories from console
+		- Art, Tech, Politics
+	* add collection_select to form and strong params
+	* change application.html to .haml
+		- add categories to application.html.haml
+	* edit #index to filter articles
+13. Ability to edit and destroy:
+	* #update #destroy
+	* add buttons to show
+	* add edit.html.haml
+14. Styling:
+	* bootstrap-sass doc
